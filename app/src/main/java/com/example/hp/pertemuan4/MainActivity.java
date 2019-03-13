@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button luasB,kalkulatorB,browserB,recycleviewB;
+    private Button luasB,calkulatorB,browserB,recycleviewB;
 
     public MainActivity() {
     }
@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         luasB = findViewById(R.id.luasB);
-        kalkulatorB = findViewById(R.id.kalkulatorB);
+        calkulatorB = findViewById(R.id.calkulatorB);
         browserB = findViewById(R.id.browserB);
         recycleviewB = findViewById(R.id.recycleviewB);
 
@@ -32,10 +32,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        kalkulatorB.setOnClickListener(new View.OnClickListener() {
+        calkulatorB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(),KalkulatorActivity.class);
+                Intent i = new Intent(getApplicationContext(), CalculatorActivity.class);
                 startActivity(i);
             }
         });
